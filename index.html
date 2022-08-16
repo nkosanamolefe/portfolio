@@ -3,138 +3,70 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- unicorns -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- website title -->
     <title>NkosanaDev Porfolio Website</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-          <img src="" alt="">
-      </div>
-      <button class="nav-toggle" aria-label="toggle-navigation">
-        <span class="humburger"></span>
-      </button>
-      <nav class="nav">
-          <ul class="nav__list">
-              <li class="nav__item"><a href="home" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="services" class="nav__link">My Services</a></li>
-              <li class="nav__item"><a href="about" class="nav__link">About me</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Nkosana</a>
+    
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portolio" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Contactme
+              </a>
+            </li>
           </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+    
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+          </div>
+        </div>
       </nav>
     </header>
+    <!-- end of header -->
+      
+    <!-- home -->
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section_title section__title--intoro">
-        Hi, I am <strong>Nkosana Molefe</strong>
-      </h1>
-      <p class="section__subtile section__subtitle--intro">front-end dev</p>
-      <img src="" alt="profile picture">
-    </section>
-
-    <!-- My Services -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="services">
-            <h3>E-Commerce</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illum minus totam consectetur laudantium velit rerum, suscipit dolorum accusamus odit quis, reprehenderit sunt at error ducimus nihil ullam voluptatum reiciendis.</p>
-        </div> <!-- / My Services -->
-
-        <div class="services">
-          <h3>React Native</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis itaque, eaque neque perspiciatis, optio delectus minima adipisci similique totam sunt voluptatibus iure harum. Provident non voluptatum totam? Vel, at?</p>
-        </div> <!-- / My Services -->
-
-        <div class="services">
-          <h3>WordPress</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ea ex. Molestiae asperiores iusto laboriosam fugiat, ullam quisquam? Ab totam ea consequuntur adipisci laborum fugit accusamus sed itaque pariatur iste.</p>
-        </div> <!-- / My Services -->
-      </div>
-      <a href="#work" class="btn">My Work</a>
-    </section>
-
-    <!-- About me -->
-    <section class="about-me" id="about">
-      <h2>Who I am</h2>
-      <p></p>
-
-      <div class="about-me__body">
-        <p></p>
-        <p></p>
-      </div>
-      <img src="" alt="">
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
-
-      <div class="portolio">
-    
-        <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 02 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 03 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 04 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 05 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 06 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 07 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 08 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 09 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 00 -->
-        <a href="#" class="portfolio__item">
-          <img src="" alt="portfolio__img">
-        </a>
-      </div>
-    </section>
-
-    <!--Footer -->
-    <footer>
-      <a href="mailto:nkosanamolefe.dev" class="footer__link">nkosanamolefe7.gmail.com</a>
-      <ul class="social-list">
-        <li class="social-list__item"><a class="solcial-list__link" href="">a</a></li>
-        <li class="social-list__item"><a class="solcial-list__link" href="">b</a></li>
-        <li class="social-list__item"><a class="solcial-list__link" href="">c</a></li>
-        <li class="social-list__item"><a class="solcial-list__link" href="">d</a></li>
-      </ul>
-    </footer>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
