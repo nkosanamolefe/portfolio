@@ -1,72 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- unicorns -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- unicorns -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <!-- website title -->
-    <title>NkosanaDev Porfolio Website</title>
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Nkosana</a>
-    
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user"></i>About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portolio" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Contactme
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav_close" id="nav-close"></i>
+  <!-- swiper css-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- website title -->
+  <title>NkosanaDev Portfolio Website</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Nkosana</a>
+
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Services
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact Me
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <!-- theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
         </div>
-    
-        <div class="nav__btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-bars"></i>
+      </div>
+
+    </nav>
+  </header>
+  <!-- end of header -->
+
+  <!-- main -->
+  <main id="main">
+    <!-- home -->
+    <section class="home section" id="home">
+      <div class="home__container container grid ">
+        <div class="home__content grid">
+          <div class="home_social">
+            <a href="https://github.com/" target="_blank" class="footer__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Hi, I am Nkosana</h1>
+            <h3 class="home__subtitle">Frontend developer</h3>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- end of header -->
-      
-    <!-- home -->
 
-    <!-- main js -->
-    <script src="assets/js/main.js"></script>
-  </body>
+        <div class="home__scroll">
+          <a href="" class="home__scroll-button button--flex">
+            <i class=" uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My introduction</span>
+
+      <div class="about__constainer constainer grid">
+        <img src="assets/images/m1-spect.jpg" alt="about__img" class="about__img">
+
+        <div class="about__data">
+          <p class="about__description">Web developer, with extensive knowledge and years of
+            experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name">Years <br> experience</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">20+</span>
+              <span class="about__info-name">Completed <br> projects</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name">Companies <br> worked</span>
+            </div>
+          </div>
+
+          <div class="about__buttons">
+            <a download="" href="" class="button button--flex">
+              Download CV <i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+      <div class="skills__container container grid">
+        <div>
+          <!-- skills 1 -->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend developer</h1>
+                <span class="skills__subtitle">More than 4 years experience</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- skills 2 -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Backend developer</h1>
+                <span class="skills__subtitle">More than 2 years experience</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node Js</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="s">
+                  <h3 class="skills__name">Firebase</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- skills 3 -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Designer</h1>
+                <span class="skills__subtitle">More than 2 years experience</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Photoshop</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services section" id="services">
+      <h2 class="section__title">Services</h2>
+      <span class="section__subtitle">What I offer</span>
+
+      <div class="services__container container grid">
+
+        <!-- services 1-->
+        <div class="services__content">
+          <div>
+            <i class="uil uil-web-grid services__icon"></i>
+            <h3 class="services__title">Ui/Ux <br> Designer</h3>
+
+            <span class="button button--flex button--small button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I create ux element interactions.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I position your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- services 2-->
+        <div class="services__content">
+          <div>
+            <i class="uil uil-arrow services__icon"></i>
+            <h3 class="services__title">Frontend <br> Developer</h3>
+
+            <span class="button button--flex button--small button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I create ux element interactions.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I position your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- services 3-->
+        <div class="services__content">
+          <div>
+            <i class="uil uil-pen services__icon"></i>
+            <h3 class="services__title">Branding <br> Designer</h3>
+
+            <span class="button button--flex button--small button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Branding <br> Designer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I create ux element interactions.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle service__modal-icon"></i>
+                    <p>I position your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most recent work</span>
+    
+      <div class="portfolio__container container swiper">
+        <div class="swiper-wrapper">
+          <!-- portfolio 1 -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/m1-spect.jpg" alt="portfolio__img">
+      
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Modern website</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- portfolio 2 -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/m1-spect.jpg" alt="portfolio__img">
+      
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Branding design</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+      
+          </div>
+      
+          <!-- portfolio 3 -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/m1-spect.jpg" alt="portfolio__img">
+      
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Online store</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+      
+          </div>
+        </div>
+
+        <!-- add arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- add pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
+
+    <!-- contact -->
+    <section class="section contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">Nkosana@email.com"</span>
+              </div>
+            </div>
+          </div>
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input">
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input">
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Project</label>
+                <input type="text" class="contact__input">
+              </div>
+            </div>
+            <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+              </div>
+
+              <div>
+                <a href="" class="button button--flex">
+                  Send message
+                  <i class="uil uil-message button__icon"></i>
+                </a>
+              </div>
+          </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Nkosana</h1>
+            <span class="footer__subtitle">Frontend developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contactme</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil-facebook-f"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil-instagram"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Nkasana. All right reserved</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- scroll top -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!-- swiper js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
